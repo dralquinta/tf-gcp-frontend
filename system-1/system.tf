@@ -9,6 +9,7 @@ module "gce_instance" {
 # Module to create and attach disk (Referenced from a GitHub repo, can be used later)
 module "gce_disk" {
   source = "git::https://github.com/dralquinta/tf-gcp-disk.git?ref=main" # Replace with the correct URL
+  depends_on = [ module.gce_instance ]
   disk_name    = var.disk_name
   disk_size_gb = var.disk_size_gb
   zone         = var.zone
