@@ -8,7 +8,7 @@ instance_name = "frontend-instance-2"
 machine_type  = "e2-micro"
 
 # Disk configuration
-disk_name    = "frontend-disk"
+disk_name    = "frontend-disk-2"
 disk_size_gb = 200
 
 # Network and Subnet
