@@ -1,0 +1,12 @@
+# Project-specific configurations
+project_id   = "your-project-id"
+region       = "us-central1"
+zone         = "us-central1-a"
+
+# Instance configuration
+instance_name = "frontend-instance"
+machine_type  = "n1-standard-2"
+
+# Disk configuration
+disk_name    = "frontend-disk"
+disk_size_gb = 200
