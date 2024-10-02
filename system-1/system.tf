@@ -1,10 +1,3 @@
-
-provider "google" {
-  project = var.project_id
-  region  = var.region
-  zone    = var.zone
-}
-
 # Module to create a GCE instance (Referenced from a GitHub repo)
 module "gce_instance" {
   source = "git::https://github.com/dralquinta/tf-gcp-compute.git?ref=main" # Replace with the correct URL
