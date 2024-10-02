@@ -4,6 +4,8 @@ module "gce_instance" {
   instance_name = var.instance_name
   machine_type  = var.machine_type
   zone          = var.zone
+  network      = var.network
+  subnet       = var.subnet
 }
 
 # Module to create and attach disk (Referenced from a GitHub repo, can be used later)
@@ -14,6 +16,4 @@ module "gce_disk" {
   disk_size_gb = var.disk_size_gb
   zone         = var.zone
   instance     = module.gce_instance.instance_self_link
-  network      = var.network
-  subnet       = var.subnet
 }
