@@ -14,4 +14,6 @@ module "gce_disk" {
   disk_size_gb = var.disk_size_gb
   zone         = var.zone
   instance     = module.gce_instance.instance_self_link
+  network      = var.network
+  subnet       = var.subnet
 }

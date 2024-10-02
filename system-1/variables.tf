@@ -36,3 +36,13 @@ variable "disk_size_gb" {
   type        = number
   default     = 100
 }
+
+variable "network" {
+  description = "Name of the VPC"
+  type = string  
+}
+
+variable "subnet" {
+  description = "Name of the subnet"
+  type = string
+}
