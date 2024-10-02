@@ -1,7 +1,7 @@
 # Project-specific configurations
-project_id   = "your-project-id"
-region       = "us-central1"
-zone         = "us-central1-a"
+project_id   = "dryruns"
+region       = "southamerica-west1"
+zone         = "southamerica-west1-a"
 
 # Instance configuration
 instance_name = "frontend-instance"
