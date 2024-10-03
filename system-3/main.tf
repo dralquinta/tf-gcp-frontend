@@ -17,5 +17,5 @@ module "gce_disk" {
   disk_name    = "${var.disk_name}-${count.index + 1}"
   disk_size_gb = var.disk_size_gb
   zone         = var.zone
-  instance     = module.gce_instance.instance_self_link
+  instance     = module.gce_instance[count.index].instance_self_link
 }
