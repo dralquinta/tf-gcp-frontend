@@ -4,14 +4,18 @@ region       = "southamerica-west1"
 zone         = "southamerica-west1-a"
 
 # Instance configuration
-instance_name = "frontend-instance-1"
+instance_name = "frontend-instance"
 machine_type  = "e2-micro"
 
 # Disk configuration
-disk_name    = "frontend-disk-1"
+disk_name    = "frontend-disk"
 disk_size_gb = 200
 
 # Network and Subnet
 
 network = "projects/dryruns/global/networks/my-custom-vpc"
 subnet  = "projects/dryruns/regions/southamerica-west1/subnetworks/custom-subnet-santiago"
+
+# Instance count 
+
+instance_count = 1

@@ -46,3 +46,9 @@ variable "subnet" {
   description = "Name of the subnet"
   type = string
 }
+
+variable "instance_count" {
+  description = "Number of instances to provision"
+  type        = number
+  default     = 1
+}
