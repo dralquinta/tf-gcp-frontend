@@ -5,7 +5,7 @@ if [ -z "$1" ]; then
 fi
 
 
-cd $1;
+cd PRD/$1;
 rm -rf .terraform
 terraform init;
 terraform plan --var-file=$1.tfvars.sample
