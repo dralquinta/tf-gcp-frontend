@@ -9,7 +9,7 @@ machine_type  = "e2-micro"
 
 # Disk configuration
 disk_name    = "frontend-disk-1"
-disk_size_gb = 200
+disk_size_gb = 220
 
 # Network and Subnet
 
