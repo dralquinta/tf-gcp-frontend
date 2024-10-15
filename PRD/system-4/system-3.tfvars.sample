@@ -1,0 +1,21 @@
+# Project-specific configurations
+project_id   = "dryruns"
+region       = "southamerica-west1"
+zone         = "southamerica-west1-a"
+
+# Instance configuration
+instance_name = "frontend-instance"
+machine_type  = "e2-micro"
+
+# Disk configuration
+disk_name    = "frontend-disk"
+disk_size_gb = 500
+
+# Network and Subnet
+
+network = "projects/dryruns/global/networks/my-custom-vpc"
+subnet  = "projects/dryruns/regions/southamerica-west1/subnetworks/custom-subnet-santiago"
+
+# Instance count 
+
+instance_count = 2
