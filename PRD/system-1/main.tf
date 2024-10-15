@@ -1,6 +1,6 @@
 # Module to create a GCE instance (Referenced from a GitHub repo)
 module "gce_instance" {
-  source = "git::https://github.com/dralquinta/tf-gcp-compute.git?ref=main" # Replace with the correct URL
+  source = "git::https://github.com/dralquinta/tf-gcp-compute.git?ref=v1.0.0" # Replace with the correct URL
   instance_name = var.instance_name
   machine_type  = var.machine_type
   zone          = var.zone
